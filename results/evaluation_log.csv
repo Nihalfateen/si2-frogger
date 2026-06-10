@@ -1,201 +1,201 @@
-score,high_score,reached_mid_checkpoint,steps,agent,episode
-150,160,True,217,Q-learning,1
-150,160,True,217,Q-learning,2
-150,160,True,217,Q-learning,3
-150,160,True,217,Q-learning,4
-150,160,True,217,Q-learning,5
-150,160,True,217,Q-learning,6
-150,160,True,217,Q-learning,7
-150,160,True,217,Q-learning,8
-150,160,True,217,Q-learning,9
-150,160,True,217,Q-learning,10
-150,160,True,217,Q-learning,11
-150,160,True,217,Q-learning,12
-150,160,True,217,Q-learning,13
-150,160,True,217,Q-learning,14
-150,160,True,217,Q-learning,15
-150,160,True,217,Q-learning,16
-150,160,True,217,Q-learning,17
-150,160,True,217,Q-learning,18
-150,160,True,217,Q-learning,19
-150,160,True,217,Q-learning,20
-150,160,True,217,Q-learning,21
-150,160,True,217,Q-learning,22
-150,160,True,217,Q-learning,23
-150,160,True,217,Q-learning,24
-150,160,True,217,Q-learning,25
-150,160,True,217,Q-learning,26
-150,160,True,217,Q-learning,27
-150,160,True,217,Q-learning,28
-150,160,True,217,Q-learning,29
-150,160,True,217,Q-learning,30
-150,160,True,217,Q-learning,31
-150,160,True,217,Q-learning,32
-150,160,True,217,Q-learning,33
-150,160,True,217,Q-learning,34
-150,160,True,217,Q-learning,35
-150,160,True,217,Q-learning,36
-150,160,True,217,Q-learning,37
-150,160,True,217,Q-learning,38
-150,160,True,217,Q-learning,39
-150,160,True,217,Q-learning,40
-150,160,True,217,Q-learning,41
-150,160,True,217,Q-learning,42
-150,160,True,217,Q-learning,43
-150,160,True,217,Q-learning,44
-150,160,True,217,Q-learning,45
-150,160,True,217,Q-learning,46
-150,160,True,217,Q-learning,47
-150,160,True,217,Q-learning,48
-150,160,True,217,Q-learning,49
-150,160,True,217,Q-learning,50
-150,160,True,217,Q-learning,51
-150,160,True,217,Q-learning,52
-150,160,True,217,Q-learning,53
-150,160,True,217,Q-learning,54
-150,160,True,217,Q-learning,55
-150,160,True,217,Q-learning,56
-150,160,True,217,Q-learning,57
-150,160,True,217,Q-learning,58
-150,160,True,217,Q-learning,59
-150,160,True,217,Q-learning,60
-150,160,True,217,Q-learning,61
-150,160,True,217,Q-learning,62
-150,160,True,217,Q-learning,63
-150,160,True,217,Q-learning,64
-150,160,True,217,Q-learning,65
-150,160,True,217,Q-learning,66
-150,160,True,217,Q-learning,67
-150,160,True,217,Q-learning,68
-150,160,True,217,Q-learning,69
-150,160,True,217,Q-learning,70
-150,160,True,217,Q-learning,71
-150,160,True,217,Q-learning,72
-150,160,True,217,Q-learning,73
-150,160,True,217,Q-learning,74
-150,160,True,217,Q-learning,75
-150,160,True,217,Q-learning,76
-150,160,True,217,Q-learning,77
-150,160,True,217,Q-learning,78
-150,160,True,217,Q-learning,79
-150,160,True,217,Q-learning,80
-150,160,True,217,Q-learning,81
-150,160,True,217,Q-learning,82
-150,160,True,217,Q-learning,83
-150,160,True,217,Q-learning,84
-150,160,True,217,Q-learning,85
-150,160,True,217,Q-learning,86
-150,160,True,217,Q-learning,87
-150,160,True,217,Q-learning,88
-150,160,True,217,Q-learning,89
-150,160,True,217,Q-learning,90
-150,160,True,217,Q-learning,91
-150,160,True,217,Q-learning,92
-150,160,True,217,Q-learning,93
-150,160,True,217,Q-learning,94
-150,160,True,217,Q-learning,95
-150,160,True,217,Q-learning,96
-150,160,True,217,Q-learning,97
-150,160,True,217,Q-learning,98
-150,160,True,217,Q-learning,99
-150,160,True,217,Q-learning,100
-0,10,False,18,Dummy random,1
-0,20,False,23,Dummy random,2
-0,20,False,7,Dummy random,3
-0,20,False,14,Dummy random,4
-0,30,False,10,Dummy random,5
-0,20,False,30,Dummy random,6
-0,20,False,6,Dummy random,7
-0,10,False,21,Dummy random,8
-0,20,False,15,Dummy random,9
-0,20,False,11,Dummy random,10
-0,20,False,17,Dummy random,11
-0,10,False,8,Dummy random,12
-0,20,False,17,Dummy random,13
-0,20,False,14,Dummy random,14
-0,10,False,8,Dummy random,15
-0,30,False,43,Dummy random,16
-0,20,False,14,Dummy random,17
-0,20,False,33,Dummy random,18
-0,10,False,10,Dummy random,19
-0,20,False,15,Dummy random,20
-0,10,False,21,Dummy random,21
-0,20,False,7,Dummy random,22
-0,10,False,21,Dummy random,23
-0,10,False,11,Dummy random,24
-0,10,False,22,Dummy random,25
-0,20,False,21,Dummy random,26
-0,20,False,9,Dummy random,27
-0,20,False,20,Dummy random,28
-0,20,False,32,Dummy random,29
-0,20,False,17,Dummy random,30
-0,20,False,9,Dummy random,31
-0,10,False,10,Dummy random,32
-0,20,False,25,Dummy random,33
-0,10,False,8,Dummy random,34
-0,20,False,13,Dummy random,35
-0,10,False,9,Dummy random,36
-0,30,False,32,Dummy random,37
-0,20,False,18,Dummy random,38
-0,20,False,29,Dummy random,39
-0,10,False,23,Dummy random,40
-0,10,False,20,Dummy random,41
-0,10,False,6,Dummy random,42
-0,10,False,5,Dummy random,43
-0,20,False,22,Dummy random,44
-0,10,False,20,Dummy random,45
-0,10,False,8,Dummy random,46
-0,10,False,30,Dummy random,47
-0,10,False,20,Dummy random,48
-0,20,False,15,Dummy random,49
-0,10,False,15,Dummy random,50
-0,10,False,8,Dummy random,51
-0,10,False,18,Dummy random,52
-0,20,False,13,Dummy random,53
-0,10,False,9,Dummy random,54
-0,10,False,7,Dummy random,55
-0,10,False,35,Dummy random,56
-0,10,False,13,Dummy random,57
-0,10,False,11,Dummy random,58
-0,10,False,15,Dummy random,59
-0,20,False,16,Dummy random,60
-0,20,False,21,Dummy random,61
-0,10,False,15,Dummy random,62
-0,20,False,14,Dummy random,63
-0,10,False,9,Dummy random,64
-0,10,False,20,Dummy random,65
-0,10,False,12,Dummy random,66
-0,10,False,21,Dummy random,67
-0,20,False,11,Dummy random,68
-0,10,False,13,Dummy random,69
-0,10,False,7,Dummy random,70
-0,10,False,22,Dummy random,71
-0,20,False,13,Dummy random,72
-0,10,False,31,Dummy random,73
-0,10,False,10,Dummy random,74
-0,20,False,15,Dummy random,75
-0,20,False,33,Dummy random,76
-0,10,False,15,Dummy random,77
-0,10,False,11,Dummy random,78
-0,10,False,29,Dummy random,79
-0,20,False,11,Dummy random,80
-0,10,False,9,Dummy random,81
-0,20,False,29,Dummy random,82
-0,20,False,23,Dummy random,83
-0,10,False,8,Dummy random,84
-0,10,False,20,Dummy random,85
-0,20,False,11,Dummy random,86
-50,50,True,37,Dummy random,87
-0,10,False,31,Dummy random,88
-0,10,False,30,Dummy random,89
-0,20,False,17,Dummy random,90
-0,20,False,12,Dummy random,91
-0,10,False,15,Dummy random,92
-0,20,False,7,Dummy random,93
-0,10,False,8,Dummy random,94
-0,20,False,24,Dummy random,95
-0,10,False,19,Dummy random,96
-0,20,False,12,Dummy random,97
-0,10,False,22,Dummy random,98
-0,20,False,25,Dummy random,99
-0,20,False,13,Dummy random,100
+score,high_score,lives,laps,reached_mid_checkpoint,completed_lap,warmup_frames,steps,agent,episode
+50,70,0,0,True,False,57,35,Q-learning,1
+250,270,0,2,True,True,71,131,Q-learning,2
+250,270,0,2,True,True,59,133,Q-learning,3
+50,70,0,0,True,False,57,35,Q-learning,4
+450,470,0,4,True,True,65,166,Q-learning,5
+50,70,0,0,True,False,75,32,Q-learning,6
+400,420,0,4,True,True,24,115,Q-learning,7
+550,570,0,5,True,True,23,168,Q-learning,8
+450,470,0,4,True,True,65,166,Q-learning,9
+550,570,0,5,True,True,60,162,Q-learning,10
+250,280,0,2,True,True,80,85,Q-learning,11
+450,470,0,4,True,True,78,159,Q-learning,12
+550,570,0,5,True,True,23,168,Q-learning,13
+400,420,0,4,True,True,12,117,Q-learning,14
+50,70,0,0,True,False,57,35,Q-learning,15
+250,260,0,2,True,True,38,89,Q-learning,16
+300,320,0,3,True,True,18,116,Q-learning,17
+550,570,0,5,True,True,11,170,Q-learning,18
+250,280,0,2,True,True,68,87,Q-learning,19
+100,120,0,1,True,True,88,69,Q-learning,20
+50,70,0,0,True,False,81,31,Q-learning,21
+450,470,0,4,True,True,5,171,Q-learning,22
+100,120,0,1,True,True,76,71,Q-learning,23
+450,470,0,4,True,True,50,127,Q-learning,24
+50,70,0,0,True,False,57,35,Q-learning,25
+250,270,0,2,True,True,83,129,Q-learning,26
+450,470,0,4,True,True,78,159,Q-learning,27
+250,270,0,2,True,True,83,129,Q-learning,28
+250,280,0,2,True,True,20,95,Q-learning,29
+250,270,0,2,True,True,79,97,Q-learning,30
+250,270,0,2,True,True,1,67,Q-learning,31
+250,270,0,2,True,True,67,99,Q-learning,32
+250,280,0,2,True,True,8,97,Q-learning,33
+250,270,0,2,True,True,7,109,Q-learning,34
+50,70,0,0,True,False,4,44,Q-learning,35
+400,420,0,4,True,True,24,115,Q-learning,36
+300,320,0,3,True,True,30,114,Q-learning,37
+100,120,0,1,True,True,76,71,Q-learning,38
+150,170,0,1,True,True,3,38,Q-learning,39
+250,270,0,2,True,True,59,133,Q-learning,40
+450,470,0,4,True,True,41,170,Q-learning,41
+250,280,0,2,True,True,56,89,Q-learning,42
+50,70,0,0,True,False,75,32,Q-learning,43
+250,270,0,2,True,True,25,63,Q-learning,44
+450,470,0,4,True,True,66,161,Q-learning,45
+450,470,0,4,True,True,29,167,Q-learning,46
+50,70,0,0,True,False,81,31,Q-learning,47
+250,270,0,2,True,True,37,61,Q-learning,48
+50,70,0,0,True,False,63,34,Q-learning,49
+400,420,0,4,True,True,0,119,Q-learning,50
+550,570,0,5,True,True,84,158,Q-learning,51
+150,180,0,1,True,True,10,67,Q-learning,52
+150,180,0,1,True,True,58,59,Q-learning,53
+250,270,0,2,True,True,83,129,Q-learning,54
+550,570,0,5,True,True,35,166,Q-learning,55
+100,120,0,1,True,True,52,75,Q-learning,56
+150,180,0,1,True,True,70,57,Q-learning,57
+150,180,0,1,True,True,10,67,Q-learning,58
+450,470,0,4,True,True,90,157,Q-learning,59
+250,280,0,2,True,True,32,93,Q-learning,60
+100,120,0,1,True,True,40,77,Q-learning,61
+450,470,0,4,True,True,29,167,Q-learning,62
+450,470,0,4,True,True,65,166,Q-learning,63
+400,420,0,4,True,True,36,113,Q-learning,64
+150,170,0,1,True,True,3,38,Q-learning,65
+250,280,0,2,True,True,8,97,Q-learning,66
+550,570,0,5,True,True,72,160,Q-learning,67
+250,270,0,2,True,True,13,65,Q-learning,68
+50,70,0,0,True,False,51,36,Q-learning,69
+250,270,0,2,True,True,13,65,Q-learning,70
+250,270,0,2,True,True,37,61,Q-learning,71
+250,270,0,2,True,True,49,102,Q-learning,72
+250,280,0,2,True,True,8,97,Q-learning,73
+150,180,0,1,True,True,2,68,Q-learning,74
+50,70,0,0,True,False,87,30,Q-learning,75
+400,420,0,4,True,True,0,119,Q-learning,76
+50,80,0,0,True,False,27,34,Q-learning,77
+250,260,0,2,True,True,26,91,Q-learning,78
+300,320,0,3,True,True,6,118,Q-learning,79
+550,570,0,5,True,True,60,162,Q-learning,80
+550,570,0,5,True,True,48,164,Q-learning,81
+450,470,0,4,True,True,90,157,Q-learning,82
+450,470,0,4,True,True,50,127,Q-learning,83
+450,470,0,4,True,True,53,168,Q-learning,84
+50,70,0,0,True,False,9,43,Q-learning,85
+550,570,0,5,True,True,72,160,Q-learning,86
+250,280,0,2,True,True,80,85,Q-learning,87
+250,270,0,2,True,True,25,63,Q-learning,88
+450,470,0,4,True,True,86,121,Q-learning,89
+150,180,0,1,True,True,34,63,Q-learning,90
+250,270,0,2,True,True,43,103,Q-learning,91
+550,570,0,5,True,True,11,170,Q-learning,92
+50,80,0,0,True,False,39,38,Q-learning,93
+450,470,0,4,True,True,42,165,Q-learning,94
+250,270,0,2,True,True,1,67,Q-learning,95
+100,120,0,1,True,True,52,75,Q-learning,96
+50,80,0,0,True,False,15,42,Q-learning,97
+450,470,0,4,True,True,17,169,Q-learning,98
+250,270,0,2,True,True,31,105,Q-learning,99
+450,470,0,4,True,True,90,157,Q-learning,100
+0,20,0,0,False,False,12,20,Dummy random,1
+0,20,0,0,False,False,23,13,Dummy random,2
+50,50,0,0,True,False,11,30,Dummy random,3
+0,20,0,0,False,False,53,14,Dummy random,4
+0,20,0,0,False,False,52,16,Dummy random,5
+0,20,0,0,False,False,60,7,Dummy random,6
+0,20,0,0,False,False,39,13,Dummy random,7
+0,20,0,0,False,False,53,10,Dummy random,8
+0,20,0,0,False,False,32,12,Dummy random,9
+0,20,0,0,False,False,29,31,Dummy random,10
+0,20,0,0,False,False,35,20,Dummy random,11
+0,20,0,0,False,False,82,14,Dummy random,12
+0,10,0,0,False,False,87,32,Dummy random,13
+0,20,0,0,False,False,49,8,Dummy random,14
+0,10,0,0,False,False,56,9,Dummy random,15
+0,20,0,0,False,False,22,25,Dummy random,16
+0,10,0,0,False,False,68,20,Dummy random,17
+0,10,0,0,False,False,24,8,Dummy random,18
+0,10,0,0,False,False,29,13,Dummy random,19
+0,20,0,0,False,False,48,33,Dummy random,20
+0,10,0,0,False,False,90,6,Dummy random,21
+0,20,0,0,False,False,4,14,Dummy random,22
+0,10,0,0,False,False,12,20,Dummy random,23
+0,20,0,0,False,False,65,22,Dummy random,24
+0,20,0,0,False,False,60,12,Dummy random,25
+0,20,0,0,False,False,49,12,Dummy random,26
+0,10,0,0,False,False,25,11,Dummy random,27
+0,10,0,0,False,False,70,25,Dummy random,28
+0,20,0,0,False,False,52,16,Dummy random,29
+0,20,0,0,False,False,31,7,Dummy random,30
+0,20,0,0,False,False,45,31,Dummy random,31
+0,20,0,0,False,False,54,8,Dummy random,32
+0,30,0,0,False,False,70,40,Dummy random,33
+0,10,0,0,False,False,88,25,Dummy random,34
+0,10,0,0,False,False,86,14,Dummy random,35
+0,20,0,0,False,False,69,11,Dummy random,36
+0,20,0,0,False,False,40,22,Dummy random,37
+0,20,0,0,False,False,48,6,Dummy random,38
+0,10,0,0,False,False,53,20,Dummy random,39
+0,20,0,0,False,False,58,28,Dummy random,40
+0,10,0,0,False,False,27,25,Dummy random,41
+0,20,0,0,False,False,16,13,Dummy random,42
+0,20,0,0,False,False,56,20,Dummy random,43
+0,10,0,0,False,False,83,17,Dummy random,44
+0,20,0,0,False,False,32,17,Dummy random,45
+0,20,0,0,False,False,23,8,Dummy random,46
+0,10,0,0,False,False,20,14,Dummy random,47
+0,10,0,0,False,False,51,25,Dummy random,48
+0,10,0,0,False,False,10,15,Dummy random,49
+0,20,0,0,False,False,71,26,Dummy random,50
+0,20,0,0,False,False,18,15,Dummy random,51
+0,20,0,0,False,False,60,17,Dummy random,52
+0,20,0,0,False,False,78,19,Dummy random,53
+0,10,0,0,False,False,69,7,Dummy random,54
+0,10,0,0,False,False,66,11,Dummy random,55
+0,10,0,0,False,False,56,24,Dummy random,56
+0,20,0,0,False,False,22,18,Dummy random,57
+0,30,0,0,False,False,90,23,Dummy random,58
+0,10,0,0,False,False,54,14,Dummy random,59
+0,20,0,0,False,False,63,11,Dummy random,60
+0,30,0,0,False,False,77,50,Dummy random,61
+0,20,0,0,False,False,16,16,Dummy random,62
+0,10,0,0,False,False,87,15,Dummy random,63
+0,10,0,0,False,False,51,30,Dummy random,64
+0,10,0,0,False,False,6,15,Dummy random,65
+0,10,0,0,False,False,30,6,Dummy random,66
+0,10,0,0,False,False,48,13,Dummy random,67
+0,10,0,0,False,False,39,25,Dummy random,68
+0,20,0,0,False,False,80,11,Dummy random,69
+0,20,0,0,False,False,54,34,Dummy random,70
+0,20,0,0,False,False,63,19,Dummy random,71
+0,10,0,0,False,False,9,19,Dummy random,72
+0,10,0,0,False,False,77,16,Dummy random,73
+0,30,0,0,False,False,2,35,Dummy random,74
+0,10,0,0,False,False,50,33,Dummy random,75
+0,10,0,0,False,False,24,28,Dummy random,76
+0,10,0,0,False,False,19,16,Dummy random,77
+0,30,0,0,False,False,8,17,Dummy random,78
+0,20,0,0,False,False,70,13,Dummy random,79
+0,20,0,0,False,False,45,7,Dummy random,80
+0,20,0,0,False,False,46,25,Dummy random,81
+0,10,0,0,False,False,83,14,Dummy random,82
+0,20,0,0,False,False,19,17,Dummy random,83
+0,10,0,0,False,False,75,18,Dummy random,84
+0,10,0,0,False,False,27,13,Dummy random,85
+0,20,0,0,False,False,65,19,Dummy random,86
+0,20,0,0,False,False,29,15,Dummy random,87
+0,20,0,0,False,False,54,12,Dummy random,88
+0,20,0,0,False,False,70,11,Dummy random,89
+0,10,0,0,False,False,53,13,Dummy random,90
+0,10,0,0,False,False,43,18,Dummy random,91
+0,20,0,0,False,False,8,21,Dummy random,92
+0,10,0,0,False,False,36,20,Dummy random,93
+0,20,0,0,False,False,86,14,Dummy random,94
+0,10,0,0,False,False,26,5,Dummy random,95
+0,10,0,0,False,False,75,13,Dummy random,96
+0,20,0,0,False,False,50,16,Dummy random,97
+0,20,0,0,False,False,21,15,Dummy random,98
+0,10,0,0,False,False,38,10,Dummy random,99
+0,10,0,0,False,False,75,11,Dummy random,100

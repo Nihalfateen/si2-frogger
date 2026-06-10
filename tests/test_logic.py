@@ -1,6 +1,9 @@
 import unittest
+from unittest.mock import patch
 from server.logic import Frogger
 from agents.rl_agent import QLearningPolicy
+from agents.evaluate_agents import run_episode
+from agents.train_q_learning import parse_args
 
 class TestFroggerLogic(unittest.TestCase):
     def setUp(self):
@@ -12,6 +15,14 @@ class TestFroggerLogic(unittest.TestCase):
         self.assertEqual(self.game.lives, 3)
         self.assertEqual(self.game.score, 0)
         self.assertFalse(self.game.game_over)
+
+    def test_state_includes_training_and_runtime_metadata(self):
+        state = self.game.get_state()
+
+        self.assertEqual(state["laps"], 0)
+        self.assertEqual(state["current_lap_checkpoint"], 0)
+        self.assertEqual(state["frames_since_last_move"], self.game.move_cooldown_frames)
+        self.assertEqual(state["move_cooldown_frames"], self.game.move_cooldown_frames)
 
     def test_move_north(self):
         self.game.move_frog("NORTH", ignore_cooldown=True)
@@ -101,6 +112,29 @@ class TestQLearningPolicy(unittest.TestCase):
         state = self.game.get_state()
 
         self.assertEqual(self.policy.choose_action(state), "NORTH")
+
+
+class TestEvaluationProcess(unittest.TestCase):
+    def test_run_episode_records_warmup_and_progress_metadata(self):
+        result = run_episode(lambda _state: "NORTH", max_steps=2, warmup_frames=7)
+
+        self.assertEqual(result["warmup_frames"], 7)
+        self.assertIn("high_score", result)
+        self.assertIn("lives", result)
+        self.assertIn("laps", result)
+        self.assertIn("completed_lap", result)
+
+
+class TestTrainingConfiguration(unittest.TestCase):
+    def test_default_training_hyperparameters_match_checked_in_model(self):
+        with patch("sys.argv", ["train_q_learning"]):
+            args = parse_args()
+
+        self.assertEqual(args.episodes, 3000)
+        self.assertEqual(args.alpha, 0.15)
+        self.assertEqual(args.gamma, 0.95)
+        self.assertEqual(args.epsilon, 0.40)
+        self.assertEqual(args.seed, 7)
 
 if __name__ == "__main__":
     unittest.main()

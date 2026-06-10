@@ -85,7 +85,7 @@ class QLearningPolicy:
     def encode_state(self, state: Dict[str, Any]) -> StateKey:
         x = int(round(float(state.get("frog_x", 0))))
         y = int(state.get("frog_y", 0))
-        checkpoint_phase = 1 if y >= 4 else 0
+        checkpoint_phase = 1 if int(state.get("current_lap_checkpoint", 0)) >= 50 else 0
         current_risk = self._risk_bucket(state, x, y)
         north_risk = self._risk_bucket(state, x, y + 1)
         lateral_bias = self._best_lateral_bias(state, x, y + 1)

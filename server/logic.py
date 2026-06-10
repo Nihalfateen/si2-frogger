@@ -204,6 +204,10 @@ class Frogger:
             "lives": self.lives,
             "score": self.score,
             "high_score": self.high_score,
+            "laps": self.laps,
+            "current_lap_checkpoint": self.current_lap_checkpoint,
+            "frames_since_last_move": self.frames_since_last_move,
+            "move_cooldown_frames": self.move_cooldown_frames,
             "game_over": self.game_over,
             "win": self.win,
             "obstacles": [obs.to_dict() for obs in self.obstacles]

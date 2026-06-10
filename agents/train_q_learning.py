@@ -80,7 +80,7 @@ def run_training(
 
             next_key = policy.key_to_str(policy.encode_state(next_state))
             q_table.setdefault(next_key, {next_action: 0.0 for next_action in ACTIONS})
-            best_next = max(q_table[next_key].values())
+            best_next = 0.0 if next_state.get("game_over") else max(q_table[next_key].values())
             old_value = q_table[state_key][action]
             q_table[state_key][action] = old_value + alpha * (reward + gamma * best_next - old_value)
 
@@ -150,7 +150,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--alpha", type=float, default=0.15, help="Learning rate.")
     parser.add_argument("--gamma", type=float, default=0.95, help="Discount factor.")
     parser.add_argument("--epsilon", type=float, default=0.40, help="Initial exploration rate.")
-    parser.add_argument("--seed", type=int, default=42, help="Random seed.")
+    parser.add_argument("--seed", type=int, default=7, help="Random seed.")
     parser.add_argument("--output", type=Path, default=default_model_path(), help="Output model path.")
     parser.add_argument("--results-dir", type=Path, default=Path("results"), help="Directory for logs and plots.")
     return parser.parse_args()

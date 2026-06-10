@@ -1,3 +1,3 @@
-agent,episodes,average_score,best_score,mid_checkpoint_rate
-Q-learning,100,150.0,150,100.0
-Dummy random,100,0.5,50,1.0
+agent,episodes,max_warmup_frames,average_score,best_score,average_high_score,best_high_score,mid_checkpoint_rate,lap_completion_rate
+Q-learning,100,90,282.5,550,304.1,570,100.0,84.0
+Dummy random,100,90,0.5,50,16.6,50,1.0,0.0

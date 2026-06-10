@@ -103,7 +103,7 @@ python3 -m agents.train_q_learning \
   --alpha 0.15 \
   --gamma 0.95 \
   --epsilon 0.40 \
-  --seed 42 \
+  --seed 7 \
   --output models/q_table.json
 ```
 
@@ -116,6 +116,8 @@ Training outputs are written to:
 - `results/training_curve.png`
 
 ![Training curve](results/training_curve.png)
+
+The displayed curve was regenerated from the current 3000-episode training run with `alpha=0.15`, `gamma=0.95`, `epsilon=0.40`, and `seed=7`.
 
 ## Agent Architecture
 
@@ -187,7 +189,7 @@ The score delta keeps the learned policy aligned with the game objective. The fo
 The checked-in model was generated with:
 
 ```bash
-python3 -m agents.train_q_learning --episodes 3000 --alpha 0.15 --gamma 0.95 --epsilon 0.40 --seed 42 --output models/q_table.json --results-dir results
+python3 -m agents.train_q_learning --episodes 3000 --alpha 0.15 --gamma 0.95 --epsilon 0.40 --seed 7 --output models/q_table.json --results-dir results
 ```
 
 Training summary:
@@ -195,23 +197,27 @@ Training summary:
 | Metric | Value |
 | :----- | ----: |
 | Episodes | 3000 |
-| Seed | 42 |
-| Learned states | 372 |
-| Average final score | 11.85 |
-| Best score during training | 270 |
+| Seed | 7 |
+| Learned states | 415 |
+| Average final score | 12.02 |
+| Best score during training | 210 |
 
-Offline evaluation was run for 100 episodes per agent:
+Offline evaluation was run for 100 episodes per agent with randomized traffic phase offsets:
 
 ```bash
-python3 -m agents.evaluate_agents --episodes 100 --model models/q_table.json --output results/evaluation_log.csv
+python3 -m agents.evaluate_agents --episodes 100 --model models/q_table.json --output results/evaluation_log.csv --seed 11 --max-warmup-frames 90
 ```
 
-| Agent | Average score | Best score | Episodes reaching mid-checkpoint |
-| :---- | ------------: | ---------: | -------------------------------: |
-| Q-learning agent | 150.0 | 150 | 100.0% |
-| Dummy random agent | 0.5 | 50 | 1.0% |
+Latest evaluation output:
 
-The Q-learning policy is much more consistent than the random baseline. Its safety filter avoids obvious collisions, while the learned Q-table and reward shaping push it toward checkpoint progress instead of random lateral movement.
+| Agent | Average score | Best score | Average high score | Best high score | Episodes reaching mid-checkpoint | Episodes completing a lap |
+| :---- | ------------: | ---------: | -----------------: | --------------: | -------------------------------: | ------------------------: |
+| Q-learning agent | 155.5 | 350 | 172.9 | 380 | 100.0% | 64.0% |
+| Dummy random agent | 0.5 | 50 | 16.6 | 50 | 1.0% | 0.0% |
+
+Fixed-phase evaluation with `--max-warmup-frames 0` repeats the same initial traffic layout every episode and can overstate policy robustness. With the current model it scores `300.0` average over 100 identical-phase episodes, while the randomized traffic-phase evaluation above is the reported robustness metric.
+
+The Q-learning policy is stronger than the random baseline, but the varied-phase evaluation shows that it is not uniformly stable across all traffic timings. The training curve remains noisy because many exploratory training episodes still end with low or zero final score.
 
 ## Tests
 
@@ -219,6 +225,13 @@ Run the test suite:
 
 ```bash
 python3 -m unittest discover -s tests
+```
+
+Latest test result:
+
+```text
+Ran 13 tests in 0.001s
+OK
 ```
 
 Current tests cover:
@@ -229,6 +242,8 @@ Current tests cover:
 - Checkpoint and score behavior.
 - High-score tracking.
 - Q-learning policy safety decisions.
+- Training hyperparameter defaults.
+- Evaluation warmup and progress metadata.
 
 ## Repository Structure
 
@@ -256,7 +271,3 @@ tests/
 integration.md           Integration notes.
 prd.md                   Product requirements document.
 ```
-
-## Notes for Submission
-
-Submit the GitHub fork URL and include the group member names and student numbers in the e-learning platform note. If further training is performed, commit the updated `models/q_table.json` and update the evaluation table above.
