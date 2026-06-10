@@ -268,6 +268,5 @@ server/
   viewer/                Browser-based Canvas UI.
 tests/
   test_logic.py          Game and policy tests.
-integration.md           Integration notes.
-prd.md                   Product requirements document.
+
 ```
