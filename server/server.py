@@ -1,6 +1,7 @@
 import logging
 from typing import Dict, Any, Optional
 
+import aigf.main as aigf_main
 import aigf.interface as interface
 import server.logic as logic
 
@@ -57,6 +58,9 @@ class FroggerGameServer(interface.GameInterface):
     async def tick(self, dt: float) -> None:
         if self.state == interface.GameState.RUNNING:
             self.game.update(dt)
+            manager = getattr(aigf_main, "manager", None)
+            if manager is not None and self.player_id is not None:
+                await manager.send_agent_state(self.player_id, self.get_state())
             if self.game.game_over:
                 logging.info("Game Over!")
                 self.state = interface.GameState.LOBBY

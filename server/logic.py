@@ -1,5 +1,7 @@
 from typing import Dict, List, Any
 
+import numpy as np
+
 class Obstacle:
     def __init__(self, x: float, y: int, width: float, speed: float, type: str, variant: str = ""):
         self.x = x
@@ -173,7 +175,6 @@ class Frogger:
         if (1 <= self.frog_y <= 3) or (5 <= self.frog_y <= 7):
             lane_obstacles = [obs for obs in self.obstacles if obs.y == self.frog_y]
             if lane_obstacles:
-                import numpy as np
                 obs_x = np.array([obs.x for obs in lane_obstacles])
                 obs_w = np.array([obs.width for obs in lane_obstacles])
                 

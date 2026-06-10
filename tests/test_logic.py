@@ -1,5 +1,6 @@
 import unittest
 from server.logic import Frogger
+from agents.rl_agent import QLearningPolicy
 
 class TestFroggerLogic(unittest.TestCase):
     def setUp(self):
@@ -77,6 +78,29 @@ class TestFroggerLogic(unittest.TestCase):
         self.game.move_frog("NORTH", ignore_cooldown=True) # Score = 10
         self.game.move_frog("NORTH", ignore_cooldown=True) # Score = 20
         self.assertEqual(self.game.high_score, 20)
+
+
+class TestQLearningPolicy(unittest.TestCase):
+    def setUp(self):
+        self.policy = QLearningPolicy(epsilon=0.0)
+        self.game = Frogger(width=11, height=9)
+
+    def test_policy_avoids_immediate_collision(self):
+        self.game.frog_x = 5.0
+        self.game.frog_y = 0
+        from server.logic import Obstacle
+        self.game.obstacles = [Obstacle(x=5.0, y=1, width=2.5, speed=0.0, type="car")]
+
+        state = self.game.get_state()
+
+        self.assertFalse(self.policy.is_action_safe(state, "NORTH"))
+        self.assertNotEqual(self.policy.choose_action(state), "NORTH")
+
+    def test_policy_prefers_progress_when_safe(self):
+        self.game.obstacles = []
+        state = self.game.get_state()
+
+        self.assertEqual(self.policy.choose_action(state), "NORTH")
 
 if __name__ == "__main__":
     unittest.main()

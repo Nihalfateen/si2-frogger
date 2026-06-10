@@ -1,2 +1,4 @@
 ai-game-framework>=1.0.0
 numpy>=2.4.6
+websockets>=12.0
+matplotlib>=3.8.0

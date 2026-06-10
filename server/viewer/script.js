@@ -43,7 +43,7 @@ const CAR_COLORS = {
 canvas.width = width * TILE_SIZE;
 canvas.height = height * TILE_SIZE;
 
-const client = new GameClient(8765);
+const client = new GameClient(Number(window.location.port) || 8765);
 
 client.onSetup = (data) => {
     width = data.width;
