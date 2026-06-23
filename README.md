@@ -2,6 +2,8 @@
 
 This repository implements an autonomous agent for the **SI2 - Frogger** project. The game server and Canvas viewer are kept from the base project, and the agent layer now includes a trainable tabular Q-learning policy with a risk-aware safety filter.
 
+GitHub repository: [Nihalfateen/si2-frogger](https://github.com/Nihalfateen/si2-frogger)
+
 The objective is to move the frog through traffic lanes, reach the middle checkpoint, reach the final checkpoint, and continue scoring laps while preserving lives.
 
 ## Features
